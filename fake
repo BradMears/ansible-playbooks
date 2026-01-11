@@ -1,0 +1,22 @@
+[alpine_hosts]
+#alpinevm
+# IP 192.168.1.140
+fake-pinut
+
+[debian_hosts]
+#proxmoxVM
+# IP 192.168.1.31
+fake-pve
+
+[debian_hosts]
+#proxmoxVM
+# IP 192.168.1.32
+fake-pve2
+
+#OPNSenseVM
+# IP 192.168.1.33
+fake-opnsense
+
+[all:vars]
+ansible_user=brad
+
