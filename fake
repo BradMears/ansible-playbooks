@@ -1,21 +1,20 @@
-[alpine_hosts]
+[nut_servers]
 #alpinevm
 # IP 192.168.1.140
 fake-pinut
 
-[debian_hosts]
+[nut_clients]
 #proxmoxVM
 # IP 192.168.1.31
-fake-pve
+fake-pve ansible_user=root
 
-[debian_hosts]
 #proxmoxVM
 # IP 192.168.1.32
-fake-pve2
+fake-pve2 ansible_user=root
 
 #OPNSenseVM
 # IP 192.168.1.33
-fake-opnsense
+#fake-opnsense
 
 [all:vars]
 ansible_user=brad
